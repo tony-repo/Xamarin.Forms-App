@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp.iOS\\DemoApp.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp.iOS\\DemoApp.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp.iOS\\DemoApp.iOS.csproj",
+        "projectName": "DemoApp.iOS",
+        "projectPath": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp.iOS\\DemoApp.iOS.csproj",
+        "packagesPath": "C:\\Users\\tony.an\\.nuget\\packages\\",
+        "outputPath": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tony.an\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp\\DemoApp.csproj": {
+                "projectPath": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp\\DemoApp.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1142, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp\\DemoApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp\\DemoApp.csproj",
+        "projectName": "DemoApp",
+        "projectPath": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp\\DemoApp.csproj",
+        "packagesPath": "C:\\Users\\tony.an\\.nuget\\packages\\",
+        "outputPath": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tony.an\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.7.1, )"
+            },
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.7.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1142, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customControl="clr-namespace:DemoApp.CustomControl;assembly=DemoApp"
+             mc:Ignorable="d"
+             x:Class="DemoApp.LoginPage">
+
+    <StackLayout>
+        <Image Source="tpgtitle.jpg" Margin="0,30"></Image>
+        <Frame HeightRequest="230" 
+               BorderColor="Gray"
+               HorizontalOptions="FillAndExpand"
+               IsClippedToBounds="True"
+               HasShadow="True"
+               Padding="0"
+               Margin="5">
+            <StackLayout Margin="0,20">
+                <Entry Placeholder="Username or EFIN" Text="{Binding UserName}" x:Name="UserNameEntry"></Entry>
+                <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}"></Entry>
+                <StackLayout Orientation="Horizontal" Spacing="0">
+                    <CheckBox IsChecked="{Binding IsChecked}" ></CheckBox>
+                    <Label Text="Remember Me" Margin="8"></Label>
+                </StackLayout>
+                <Button BackgroundColor="Blue" 
+                    Margin="10,0,10,0"
+                Text="Log In" 
+                TextColor="White"
+                FontFamily="Bold" Command="{Binding LoginCommand}"></Button>
+
+            </StackLayout>
+        </Frame>
+
+        <!--<StackLayout>
+            <ListView x:Name="listView" ItemsSource="{Binding Sources}" x:FieldModifier="public" BackgroundColor="White" ItemSelected="ListView_OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="30,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Text}" TextColor="DodgerBlue" FontSize="Title" VerticalOptions="CenterAndExpand"/>
+                                <Image Grid.Column="1" HorizontalOptions="End" Rotation="270" WidthRequest="25" Source="arrow"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>-->
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customControl="clr-namespace:DemoApp.CustomControl;assembly=DemoApp"
+             mc:Ignorable="d"
+             Title="My Profile"
+             x:Class="DemoApp.View.MyProfilePage">
+    <ContentPage.Content>
+        <StackLayout Margin="10,20">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="tpgtitle" HeightRequest="80" WidthRequest="80"></Image>
+                <StackLayout >
+                    <Label Text="AAA Tax Office" FontSize="Medium" TextColor="Black" />
+                    <Label Text="Tony An" FontSize="Small" TextColor="Black"/>
+                    <Label Text="EFIN: 056265" FontSize="Small" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout>
+                <customControl:EditControl Title="Contact Info" EditSource="{Binding CustomEditModelGroup}"/>
+                <!--<StackLayout>
+                    <CollectionView ItemsSource="{Binding CustomEditModelGroup}"
+                        IsGrouped="true">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                              <StackLayout Padding="10,0,0,0">
+                                  <Label Text="{Binding Name}" 
+                                         FontAttributes="Bold" />
+                                  <Label Text="{Binding Value}" 
+                                         FontAttributes="Bold" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                        <CollectionView.GroupHeaderTemplate>
+                            <DataTemplate>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}"
+                                           BackgroundColor="LightGray"
+                                           FontSize="Large"
+                                           FontAttributes="Bold" />
+                                    <ImageButton Source="editicon" HeightRequest="25"></ImageButton>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.GroupHeaderTemplate>
+                    </CollectionView>
+                </StackLayout>-->
+                <!--<customControl:EditControl Title="Contact Info" EditSource="{Binding ContactInfoDataSource}"/>
+                <customControl:EditControl Title="Shipping Settings" EditSource="{Binding ShippingSettingsDataSource}"/>
+                <customControl:EditControl Title="Bank Account Info" EditSource="{Binding BankAccountInfoDataSource}"/>-->
+             
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

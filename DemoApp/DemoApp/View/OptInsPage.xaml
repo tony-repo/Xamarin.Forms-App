@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Opt-Ins"
+             x:Class="DemoApp.View.OptInsPage">
+    <ContentPage.Content>
+        <StackLayout  Margin="10,30">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="ERO Detail" FontAttributes="Bold" FontSize="Title"></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="Receive a notification when a fee deposit is made to your bank account" FontSize="Subtitle"></Label>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Checks to Print" FontAttributes="Bold" FontSize="Title" Grid.Row="0" Grid.Column="0" ></Label>
+                <Switch IsToggled="True" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand"></Switch>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Get notified when you have checks for clients that are ready to print."></Label>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Disbursement" FontAttributes="Bold" FontSize="Title" Grid.Row="0" Grid.Column="0" ></Label>
+                <Switch IsToggled="True" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand"></Switch>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="See a list of disbursements made to your clients"></Label>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Marketing Notifications" FontAttributes="Bold"  FontSize="Title" Grid.Row="0" Grid.Column="0" ></Label>
+                <Switch IsToggled="True" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand"></Switch>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Critical updates about program changes, deadlines &#38; product updates."></Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

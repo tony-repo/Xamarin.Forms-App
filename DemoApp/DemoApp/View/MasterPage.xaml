@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:DemoApp.Model;assembly=DemoApp"
+             xmlns:view="clr-namespace:DemoApp.View;assembly=DemoApp"
+             xmlns:login="clr-namespace:DemoApp;assembly=DemoApp"
+             Title="Main Page"
+             mc:Ignorable="d"
+             Padding="0,20,0,0"
+             IconImageSource="hamburger.png"
+             x:Class="DemoApp.View.MasterPage"
+             BackgroundColor="#093057">
+
+    <StackLayout>
+
+        <StackLayout Padding="30,10" BackgroundColor="#093057">
+            <Label Text="AAA Tax Office" FontSize="Medium" TextColor="White" />
+            <Label Text="EFIN: 056265" FontSize="Small" TextColor="White"/>
+        </StackLayout>
+        <ListView x:Name="listView" Margin="-6"  x:FieldModifier="public" BackgroundColor="#145788">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="Dashboard" IconSource="hamburger.png" TargetType="{x:Type view:DashboardPage}" />
+                    <!--<local:MasterPageItem Title="Notifications" IconSource="hamburger.png" TargetType="{x:Type view:DashboardPage}" />-->
+                    <local:MasterPageItem Title="Disbursements" IconSource="hamburger.png" TargetType="{x:Type view:DisbursementsPage}" />
+                    <local:MasterPageItem Title="My Profile" IconSource="hamburger.png" TargetType="{x:Type view:MyProfilePage}" />
+                    <local:MasterPageItem Title="Opt-Ins" IconSource="hamburger.png" TargetType="{x:Type view:OptInsPage}" />
+                    <local:MasterPageItem Title="Log Out" IconSource="hamburger.png" TargetType="{x:Type login:LoginPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="30,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" TextColor="White" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

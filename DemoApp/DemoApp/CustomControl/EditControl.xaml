@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="this"
+             x:Class="DemoApp.CustomControl.EditControl">
+
+    <StackLayout>
+
+        <!--<StackLayout Orientation="Horizontal"  >
+            <Label Text="{Binding Title, Source={x:Reference this}}" 
+                   FontAttributes="Bold" 
+                   FontSize="Title"
+                   TextColor="CadetBlue"></Label>
+            <ImageButton Source="editicon" HeightRequest="25"></ImageButton>
+        </StackLayout>
+        <BoxView BackgroundColor="Gray"
+                 HeightRequest="1" />-->
+
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding EditSource, Source={x:Reference this}}"
+                            IsGrouped="true">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10,0,0,0">
+                            <Label Text="{Binding Name}" 
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Value}" 
+                                   FontAttributes="Bold" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="0,10,0,0">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Name}"
+                                   FontSize="Large"
+                                   FontAttributes="Bold" />
+                            <ImageButton Source="editicon" HeightRequest="25"></ImageButton>
+                        </StackLayout>
+                        <BoxView BackgroundColor="Gray"
+                                 HeightRequest="1" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+            </CollectionView>
+        </StackLayout>
+
+        <!--<ListView x:Name="dataListView" SeparatorVisibility="None" ItemsSource="{Binding EditSource, Source={x:Reference this}}" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Value}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+
+    </StackLayout>
+</Grid>
+    
+    

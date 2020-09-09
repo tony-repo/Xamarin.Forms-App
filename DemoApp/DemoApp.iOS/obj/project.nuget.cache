@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "5P+hNK+toW9LJzw8Z05yecAQ7fDlOfsgW86XnlPMRrQNxiXug0zE0cAIHdeIk9JyRFbWsptVQ89EQVvx8Qg14g==",
+  "success": true,
+  "projectFilePath": "C:\\TonyAnWorkspace\\Prototype\\Tpg\\XamarinApp\\XamarinForERO\\DemoApp\\DemoApp\\DemoApp.iOS\\DemoApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tony.an\\.nuget\\packages\\microcharts\\0.7.1\\microcharts.0.7.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\microcharts.forms\\0.7.1\\microcharts.forms.0.7.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\skiasharp\\1.59.1\\skiasharp.1.59.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\skiasharp.views\\1.59.1.1\\skiasharp.views.1.59.1.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\skiasharp.views.forms\\1.59.1.1\\skiasharp.views.forms.1.59.1.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\tony.an\\.nuget\\packages\\xamarin.forms\\4.7.0.1142\\xamarin.forms.4.7.0.1142.nupkg.sha512"
+  ],
+  "logs": []
+}
